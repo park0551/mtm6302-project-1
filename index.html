@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Contacts</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Contacts</h1>
+        <div class="contact" id="contact">
+            <ul class="contact-list" id="contact-list"></ul>
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <form id="form">
+        <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="province">Province</label>
+            <input type="text" id="province" class="form-control">
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn btn-primary">Add Contact</button>
+    </form>
+
+
+    <!-- modal -->
+    <div class="modalcontainer">
+        <div class="modal" id="modal">
+            <h2 id="modal__fullname"></h2>
+            <p id="modal__email"></p>
+            <p id="modal__loc"></p>
+            <p id="modal__close">x</p>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

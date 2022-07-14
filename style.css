@@ -1,0 +1,82 @@
+/* imported font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* css reset referenced from https://meyerweb.com/eric/tools/css/reset/ */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: inherit;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+
+/* -----start of custom styles------ */
+
+h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+
+h2{
+    font-size: 1.5rem;
+}
+
+.main{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 2rem;
+
+}
+
+.modal{
+    background-color: blanchedalmond;
+    display: none;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 40vh;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#modal__close{
+  font-size: 3em;
+  cursor: pointer;
+}
+
+#form{
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+ul:hover{
+  cursor: pointer;
+}
+
+
